@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram" id="petAdoptionUseCase">
+    <mxGraphModel dx="2707" dy="930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontStyle=1;fontSize=14;arcSize=6;fillColor=none;strokeColor=#666666;spacingTop=10;" value="Pet Adoption &amp; Shelter Management System" vertex="1">
+          <mxGeometry height="460" width="660" x="150" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="actorApplicant" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Adoption Applicant" vertex="1">
+          <mxGeometry height="60" width="30" x="20" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="actorStaff" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Shelter Staff" vertex="1">
+          <mxGeometry height="60" width="30" x="900" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cv-7mGQZPGUk6EHx0sJh-4" edge="1" parent="1" source="uc3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.668;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;dashed=1;" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Record Medical Intake &amp; Vaccination" vertex="1">
+          <mxGeometry height="53.47826086956522" width="239.99999999999997" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Update Animal Availability&#xa;(Ready for Adoption)" vertex="1">
+          <mxGeometry height="53.47826086956522" width="239.99999999999997" x="530" y="370.0004347826087" as="geometry" />
+        </mxCell>
+        <mxCell id="cv-7mGQZPGUk6EHx0sJh-13" edge="1" parent="1" source="uc7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="actorStaff">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="520" />
+              <mxPoint x="770" y="520" />
+              <mxPoint x="770" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Review &amp; Decide Application" vertex="1">
+          <mxGeometry height="53.47826086956522" width="239.99999999999997" x="530" y="490.0008695652174" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeInclude2" edge="1" parent="1" source="uc5" style="endArrow=open;dashed=1;html=1;strokeColor=#333333;fontSize=11;" target="uc6" value="«include»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeInclude3" edge="1" parent="1" source="uc7" style="endArrow=open;dashed=1;html=1;strokeColor=#333333;fontSize=11;" target="uc6" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="457.391304347826" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cv-7mGQZPGUk6EHx0sJh-10" edge="1" parent="1" source="uc3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" target="actorApplicant">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180.05" y="470.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cv-7mGQZPGUk6EHx0sJh-11" edge="1" parent="1" source="uc1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="actorApplicant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cv-7mGQZPGUk6EHx0sJh-12" edge="1" parent="1" source="uc5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="actorStaff">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Search Pet Catalogue" vertex="1">
+          <mxGeometry height="60" width="220" x="180" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Apply Pet Filters&#xa;(Species, Age, Breed, Good with Kids)" vertex="1">
+          <mxGeometry height="60" width="220" x="180" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Adoption" vertex="1">
+          <mxGeometry height="60" width="220" x="180" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeExtend" edge="1" parent="1" source="uc2" style="endArrow=open;dashed=1;html=1;strokeColor=#333333;fontSize=11;" target="uc1" value="«extend»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CO3cmx5Kd-J3GiQSqb5o-3" edge="1" parent="1" source="uc1" style="endArrow=none;dashed=1;html=1;strokeColor=#333333;fontSize=11;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" target="uc6" value="«include»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="417" as="sourcePoint" />
+            <mxPoint x="460" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
